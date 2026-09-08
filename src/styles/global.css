@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   Design tokens · Tema oscuro premium "OCO Agropecuaria SRL"
+   ============================================================ */
+@theme {
+  --font-sans:
+    'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --font-display: 'Sora Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Superficies */
+  --color-background: #0a100d;
+  --color-foreground: #e8f0ea;
+  --color-card: #101813;
+  --color-muted: #161f19;
+  --color-muted-foreground: #93a29a;
+
+  /* Acento */
+  --color-primary: #34d399;
+  --color-primary-foreground: #052e1a;
+  --color-ring: #34d399;
+  --color-border: #1e2a22;
+
+  --animate-float: float 7s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground;
+  }
+
+  ::selection {
+    @apply bg-primary/30;
+  }
+}
+
+/* Accesibilidad: desactiva animaciones para quien lo prefiera. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
