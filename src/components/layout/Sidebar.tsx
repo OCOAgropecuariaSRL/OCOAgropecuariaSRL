@@ -80,7 +80,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
         </nav>
 
         <div className="flex items-center gap-2 border-t border-border p-4">
-          <div className="flex size-8 items-center justify-center rounded-full bg-emerald-100 text-xs font-semibold text-primary">
+          <div className="flex size-8 items-center justify-center rounded-full bg-primary/15 text-xs font-semibold text-primary">
             OP
           </div>
           <div className="min-w-0 leading-tight">

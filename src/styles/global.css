@@ -10,17 +10,17 @@
   --font-display: 'Sora Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
   /* Superficies */
-  --color-background: #0a100d;
-  --color-foreground: #e8f0ea;
-  --color-card: #101813;
-  --color-muted: #161f19;
-  --color-muted-foreground: #93a29a;
+  --color-background: #13241b;
+  --color-foreground: #eef6f0;
+  --color-card: #1a2f23;
+  --color-muted: #213829;
+  --color-muted-foreground: #a3b8ab;
 
   /* Acento */
-  --color-primary: #34d399;
-  --color-primary-foreground: #052e1a;
-  --color-ring: #34d399;
-  --color-border: #1e2a22;
+  --color-primary: #4ade80;
+  --color-primary-foreground: #052e16;
+  --color-ring: #4ade80;
+  --color-border: #2e4a37;
 
   --animate-float: float 7s ease-in-out infinite;
 

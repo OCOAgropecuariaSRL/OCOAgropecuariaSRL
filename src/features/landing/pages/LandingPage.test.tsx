@@ -60,4 +60,14 @@ describe('LandingPage', () => {
     expect(within(nav as HTMLElement).getByText('Nuestros Trabajos')).toHaveAttribute('href', '#trabajos');
     expect(within(nav as HTMLElement).getByText('Contacto')).toHaveAttribute('href', '#contacto');
   });
+
+  it('marca la sección activa del menú con aria-current (scroll-spy)', () => {
+    const { container } = render(<LandingPage />);
+
+    const nav = container.querySelector('header nav') as HTMLElement;
+
+    // Al cargar, la sección visible es "Inicio".
+    expect(within(nav).getByText('Inicio')).toHaveAttribute('aria-current', 'true');
+    expect(within(nav).getByText('Servicios')).not.toHaveAttribute('aria-current');
+  });
 });

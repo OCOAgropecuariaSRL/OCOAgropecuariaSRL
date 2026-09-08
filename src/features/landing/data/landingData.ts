@@ -43,7 +43,12 @@ export const instagramHandle = '@ocoagro';
 /** Correo de contacto. */
 export const contactEmail = 'contacto@ocoagropecuaria.com.ar';
 
-/** Imagen de fondo del hero (una de tus fotos reales, en /trabajos/). */
+/**
+ * Imagen de fondo del hero (la que se ve al abrir la página).
+ * Para cambiarla: reemplazá el archivo en public/trabajos/ o apuntá acá a otra.
+ * OJO: actualizá también el <link rel="preload" as="image"> de index.html
+ * con la misma ruta para mantener la optimización de carga inicial.
+ */
 export const heroImage = '/trabajos/03-control-orugas-trigo.jpg';
 
 export const services: ServiceItem[] = [

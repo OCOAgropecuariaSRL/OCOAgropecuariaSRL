@@ -20,14 +20,20 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-[92vh] items-center overflow-hidden scroll-mt-16"
+      className="relative isolate flex min-h-[92vh] items-center overflow-hidden scroll-mt-16"
     >
       {/* Imagen de fondo + overlays oscuros para legibilidad */}
       <div className="absolute inset-0 -z-10">
-        <img src={heroImage} alt="" aria-hidden="true" className="h-full w-full object-cover" />
+        <img
+          src={heroImage}
+          alt="Dron de OCO Agropecuaria pulverizando un cultivo"
+          fetchPriority="high"
+          decoding="async"
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(52,211,153,0.16),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(74,222,128,0.14),transparent_55%)]" />
       </div>
 
       <div className="mx-auto w-full max-w-6xl px-4 pb-20 pt-28 md:px-6">
@@ -40,9 +46,9 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={90}>
-            <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+            <h1 className="font-display text-5xl font-bold uppercase leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
               Fumigá tu campo con{' '}
-              <span className="bg-gradient-to-r from-primary via-emerald-300 to-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-green-300 to-primary bg-clip-text text-transparent">
                 drones
               </span>
               , sin pisar el lote
@@ -58,7 +64,10 @@ export default function Hero() {
 
           <Reveal delay={240}>
             <div className="flex flex-wrap gap-3">
-              <a href={landingAnchors.contactanos} className={buttonVariants({ size: 'lg' })}>
+              <a
+                href={landingAnchors.contactanos}
+                className={cn(buttonVariants({ size: 'lg' }), 'uppercase tracking-wide')}
+              >
                 Cotiza ahora
                 <ArrowRight className="size-4" />
               </a>
@@ -66,7 +75,7 @@ export default function Hero() {
                 href={landingAnchors.trabajos}
                 className={cn(
                   buttonVariants({ variant: 'outline', size: 'lg' }),
-                  'border-white/25 hover:bg-white/10',
+                  'border-white/25 uppercase tracking-wide hover:bg-white/10',
                 )}
               >
                 Ver trabajos realizados
