@@ -41,7 +41,7 @@ export const instagramUrl = 'https://www.instagram.com/ocoagro';
 export const instagramHandle = '@ocoagro';
 
 /** Correo de contacto. */
-export const contactEmail = 'contacto@ocoagropecuaria.com.ar';
+export const contactEmail = 'oco.agropecuariasrl@gmail.com';
 
 /**
  * Imagen de fondo del hero (la que se ve al abrir la página).

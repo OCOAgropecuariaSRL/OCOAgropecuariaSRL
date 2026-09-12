@@ -39,8 +39,8 @@ describe('LandingPage', () => {
     const instagram = screen.getByText('@ocoagro');
     expect(instagram).toHaveAttribute('href', 'https://www.instagram.com/ocoagro');
 
-    const email = screen.getByText('contacto@ocoagropecuaria.com.ar');
-    expect(email).toHaveAttribute('href', 'mailto:contacto@ocoagropecuaria.com.ar');
+    const email = screen.getByText('oco.agropecuariasrl@gmail.com');
+    expect(email).toHaveAttribute('href', 'mailto:oco.agropecuariasrl@gmail.com');
 
     expect(
       screen.getByText('Trabajamos en el este cordobés, San Francisco y alrededores'),
