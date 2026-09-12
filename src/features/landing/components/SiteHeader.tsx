@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Menu, Plane, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
+import { BrandLogo } from '@/components/common/BrandLogo';
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
@@ -41,9 +42,7 @@ export default function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
         <a href={landingAnchors.inicio} className="flex items-center gap-2.5" onClick={close}>
-          <span className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-lg shadow-primary/20">
-            <Plane className="size-5" />
-          </span>
+          <BrandLogo className="size-10 shrink-0 drop-shadow-md" />
           <span className="leading-tight">
             <span className="block font-display text-base font-bold tracking-tight">
               {brandName}

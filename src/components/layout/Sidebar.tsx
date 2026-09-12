@@ -1,6 +1,7 @@
-import { Cpu, FlaskConical, HardHat, LayoutDashboard, ListTodo, Map, Plane, X } from 'lucide-react';
+import { Cpu, FlaskConical, HardHat, LayoutDashboard, ListTodo, Map, X } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
+import { BrandLogo } from '@/components/common/BrandLogo';
 import { appRoutes as R } from '@/app/routes';
 import { cn } from '@/lib/utils';
 
@@ -39,9 +40,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
       >
         <div className="flex h-16 shrink-0 items-center justify-between border-b border-border px-4">
           <div className="flex items-center gap-2.5">
-            <div className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Plane className="size-5" />
-            </div>
+            <BrandLogo className="size-9 shrink-0" />
             <div className="leading-tight">
               <p className="text-sm font-semibold">OCO Agropecuaria SRL</p>
               <p className="text-xs text-muted-foreground">Drones & Pulverización</p>
