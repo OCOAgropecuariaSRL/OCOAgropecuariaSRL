@@ -224,8 +224,8 @@ export const owners: OwnerItem[] = [
 export const visionText =
   'Soñamos con un campo más preciso, rentable y cuidado. Queremos que cada productor acceda a tecnología de aplicación que baje costos, proteja el ambiente y mejore el rendimiento de sus cultivos.';
 
-/** Destinatario del mensaje de WhatsApp. */
-export const whatsappRecipientName = owners[0]!.name;
+/** Saludo del mensaje de WhatsApp (destinatario). */
+export const whatsappRecipientName = 'OCO Agropecuaria';
 
 /** Teléfono que recibe las cotizaciones (desde .env). */
 export const whatsappPhone = env.whatsappPhone;

@@ -19,10 +19,10 @@ describe('whatsapp utils', () => {
         hectareas: '120',
         mensaje: 'Soja en lote norte',
       },
-      'Nicolás Paolasso',
+      'OCO Agropecuaria',
     );
 
-    expect(message).toContain('Hola Nicolás Paolasso, soy Juan Pérez.');
+    expect(message).toContain('Hola OCO Agropecuaria, soy Juan Pérez.');
     expect(message).toContain('Teléfono: 3564 68-4187');
     expect(message).toContain('Hectáreas a tratar: 120');
     expect(message).toContain('Comentario: Soja en lote norte');
